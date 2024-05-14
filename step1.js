@@ -6,12 +6,12 @@ async function cat(path){
     console.log("file content: ", content);
   }
   catch(err){
-    console.log("File not found");
+    console.log("File not found!");
     process.exit(1);
   }
 }
 
 const argv = process.argv;
-
 await cat(argv[2]);
+
 export { cat };
